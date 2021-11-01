@@ -16,7 +16,7 @@ class FocusOnYourLessonEasilyPage extends StatelessWidget {
             child: Container(
               child: CustomPaint(
                 size: Size(1000, (1000 * 2).toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                painter: RPSCustomPainter(),
+                painter: RPSCustomPainter1(),
               ),
             ),
           ),

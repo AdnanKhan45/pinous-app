@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pinous_app/presentation/widgets/paint_widget.dart';
+
 class TrackYourProgressPage extends StatelessWidget {
   const TrackYourProgressPage({Key? key}) : super(key: key);
 
@@ -10,13 +11,14 @@ class TrackYourProgressPage extends StatelessWidget {
         children: [
           Positioned(
             left: 35,
-            child: Container(width: 300, height: 300,child: Image.asset("lib/assets/track_your_progress.png")),
+            child: Container(width: 300, height: 300, child: Image.asset("lib/assets/track_your_progress.png")),
           ),
           Positioned(
             child: Container(
               child: CustomPaint(
-                size: Size(1000, (1000 * 2).toDouble()), //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                painter: RPSCustomPainter(),
+                size: Size(1000, (1000 * 2).toDouble()),
+                //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
+                painter: RPSCustomPainter1(),
               ),
             ),
           ),
@@ -34,7 +36,7 @@ class TrackYourProgressPage extends StatelessWidget {
                   height: 15,
                 ),
                 Text(
-                  "Thanks to Pinous, you can keep track of all your work by recording and ovserve your down progress!",
+                  "Thanks to Pinous, you can keep track of all your work by recording and observe your down progress!",
                   textAlign: TextAlign.center,
                   style: TextStyle(color: Colors.white, fontSize: 12),
                 ),
@@ -46,11 +48,12 @@ class TrackYourProgressPage extends StatelessWidget {
                   height: 60,
                   decoration: BoxDecoration(shape: BoxShape.circle, color: Colors.black87),
                   child: Center(
-                      child: Icon(
-                    Icons.arrow_forward_ios,
-                    color: Colors.white,
-                    size: 20,
-                  )),
+                    child: Icon(
+                      Icons.arrow_forward_ios,
+                      color: Colors.white,
+                      size: 20,
+                    ),
+                  ),
                 )
               ],
             ),
@@ -60,4 +63,3 @@ class TrackYourProgressPage extends StatelessWidget {
     );
   }
 }
-

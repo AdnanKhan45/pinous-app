@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'dart:ui' as ui;
-
 
 import 'package:pinous_app/presentation/widgets/paint_2_widget.dart';
 import 'package:pinous_app/presentation/widgets/password_field_widget.dart';
@@ -23,7 +21,7 @@ class SignInPage extends StatelessWidget {
               child: CustomPaint(
                 size: Size(400, (350 * 1.6666666666666667).toDouble()),
                 //You can Replace [WIDTH] with your desired width for Custom Paint and height will be calculated automatically
-                painter: RPSCustomPainter(),
+                painter: RPSCustomPainter2(),
               ),
             ),
           ),
